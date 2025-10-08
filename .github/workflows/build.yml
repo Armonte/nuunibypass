@@ -9,6 +9,9 @@ on:
 
 run-name: "Build winmm.dll #${{ github.run_number }}"
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
