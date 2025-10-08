@@ -26,18 +26,18 @@ jobs:
         chmod +x build.sh
         ./build.sh
 
-    - name: Create release package
-      run: |
-        mkdir -p release
-        cp winmm.dll steam_appid.txt release/
-        cd release
-        zip -9 ../nuunibypass.zip winmm.dll steam_appid.txt
-
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
         name: nuunibypass
-        path: nuunibypass.zip
+        path: |
+          winmm.dll
+          steam_appid.txt
+
+    - name: Create release package
+      if: startsWith(github.ref, 'refs/tags/')
+      run: |
+        zip -9 nuunibypass.zip winmm.dll steam_appid.txt
 
     - name: Create Release
       if: startsWith(github.ref, 'refs/tags/')
