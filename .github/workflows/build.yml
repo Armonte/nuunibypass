@@ -1,0 +1,58 @@
+name: Build and Release
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install MinGW-w64
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y mingw-w64 g++-mingw-w64-i686
+
+    - name: Build with build.sh
+      run: |
+        chmod +x build.sh
+        ./build.sh
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: uni2-bypass
+        path: |
+          winmm.dll
+          steam_appid.txt
+
+    - name: Create Release
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          winmm.dll
+          steam_appid.txt
+        body: |
+          ## UNI2 D Folder Bypass
+
+          **Installation:**
+          1. Download `winmm.dll` and `steam_appid.txt`
+          2. Place both files in your game directory (same folder as `uni2.exe`)
+          3. Launch the game normally
+
+          **Features:**
+          - Pattern-based patching (works across game updates)
+          - No launcher required
+          - Works with Steam
+          - Auto-clears log on each launch
+
+          See [README.md](https://github.com/Armonte/nuunibypass/blob/main/README.md) for more details.
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
