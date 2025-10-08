@@ -1,0 +1,30 @@
+# Build artifacts
+*.dll
+*.exe
+*.o
+*.a
+*.so
+steam_appid.txt
+
+# Build directories
+build/
+cmake-build-*/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+build_injector.bat
+create_dummy_d_files.py
+create_dummy_d_files.sh
+UNI2_DFOLDER_BYPASS_README.md

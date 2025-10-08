@@ -1,5 +1,12 @@
 LIBRARY winmm.dll
 EXPORTS
+    CloseDriver
+    OpenDriver
+    SendDriverMessage
+    GetDriverModuleHandle
+    DrvGetModuleHandle
+    DriverCallback
+    DefDriverProc
     timeGetTime
     timeBeginPeriod
     timeEndPeriod
@@ -10,6 +17,51 @@ EXPORTS
     mciSendCommandA
     mciSendStringA
     mciGetErrorStringA
+    mciSendCommandW
+    mciSendStringW
+    mciGetErrorStringW
+    mciGetDeviceIDA
+    mciGetDeviceIDW
+    mciExecute
+    mciGetCreatorTask
+    mciGetDeviceIDFromElementIDA
+    mciGetDeviceIDFromElementIDW
+    mciGetDriverData
+    mciGetYieldProc
+    mciSetDriverData
+    mciSetYieldProc
+    mciLoadCommandResource
+    mciFreeCommandResource
+    mciDriverNotify
+    mciDriverYield
+    mmioAdvance
+    mmioAscend
+    mmioClose
+    mmioCreateChunk
+    mmioDescend
+    mmioFlush
+    mmioGetInfo
+    mmioInstallIOProcA
+    mmioInstallIOProcW
+    mmioOpenA
+    mmioOpenW
+    mmioRead
+    mmioRenameA
+    mmioRenameW
+    mmioSeek
+    mmioSendMessage
+    mmioSetBuffer
+    mmioSetInfo
+    mmioStringToFOURCCA
+    mmioStringToFOURCCW
+    mmioWrite
+    mmsystemGetVersion
+    mmTaskBlock
+    mmTaskCreate
+    mmTaskSignal
+    mmTaskYield
+    mmGetCurrentTask
+    mmDrvInstall
     waveOutOpen
     waveOutClose
     waveOutPrepareHeader
@@ -25,6 +77,14 @@ EXPORTS
     waveOutMessage
     waveOutGetErrorTextA
     waveOutGetErrorTextW
+    waveOutGetID
+    waveOutPause
+    waveOutRestart
+    waveOutBreakLoop
+    waveOutGetPitch
+    waveOutSetPitch
+    waveOutGetPlaybackRate
+    waveOutSetPlaybackRate
     waveInOpen
     waveInClose
     waveInPrepareHeader
@@ -39,16 +99,22 @@ EXPORTS
     waveInMessage
     waveInGetErrorTextA
     waveInGetErrorTextW
+    waveInGetID
+    waveInGetPosition
     mixerOpen
     mixerClose
     mixerGetControlDetailsA
+    mixerGetControlDetailsW
     mixerGetLineControlsA
+    mixerGetLineControlsW
     mixerGetLineInfoA
+    mixerGetLineInfoW
     mixerSetControlDetails
     mixerGetID
     mixerGetDevCapsA
     mixerGetDevCapsW
     mixerGetNumDevs
+    mixerMessage
     midiOutGetErrorTextW
     midiOutGetErrorTextA
     midiOutGetNumDevs
@@ -64,6 +130,9 @@ EXPORTS
     midiOutGetVolume
     midiOutSetVolume
     midiOutMessage
+    midiOutGetID
+    midiOutCachePatches
+    midiOutCacheDrumPatches
     midiInGetNumDevs
     midiInGetDevCapsA
     midiInGetDevCapsW
@@ -78,8 +147,34 @@ EXPORTS
     midiInMessage
     midiInGetErrorTextA
     midiInGetErrorTextW
+    midiInGetID
+    midiConnect
+    midiDisconnect
+    midiStreamOpen
+    midiStreamClose
+    midiStreamOut
+    midiStreamPause
+    midiStreamPosition
+    midiStreamProperty
+    midiStreamRestart
+    midiStreamStop
     PlaySoundA
     PlaySoundW
     sndPlaySoundA
     sndPlaySoundW
-
+    auxGetNumDevs
+    auxGetDevCapsA
+    auxGetDevCapsW
+    auxGetVolume
+    auxSetVolume
+    auxOutMessage
+    joyGetNumDevs
+    joyGetDevCapsA
+    joyGetDevCapsW
+    joyGetPos
+    joyGetPosEx
+    joyGetThreshold
+    joySetThreshold
+    joySetCapture
+    joyReleaseCapture
+    joyConfigChanged

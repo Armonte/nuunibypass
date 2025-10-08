@@ -21,7 +21,7 @@ The bypass uses a proxy DLL technique:
 The bypass uses **pattern scanning** to find patch locations dynamically:
 - Works across game updates - no hardcoded addresses
 - Scans for unique byte signatures in the game's `.text` section
-- Falls back to known addresses if patterns aren't found
+- 100% pattern-based - no fallback addresses
 
 ### The Patches
 
