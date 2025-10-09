@@ -5,6 +5,11 @@
 #include <windows.h>
 #include <cstdio>
 #include "pattern_scanner.h"
+#include "nuuni_config.h"
+#include "geo_patches.h"
+
+// Global config instance
+NuUniConfigManager* g_Config = nullptr;
 
 // Real WinMM DLL handle
 HMODULE hRealWinMM = nullptr;
@@ -15,6 +20,11 @@ HMODULE hRealWinMM = nullptr;
 static bool g_logInitialized = false;
 
 void WriteLog(const char* msg) {
+    // Skip logging if disabled in config
+    if (!IsLoggingEnabled()) {
+        return;
+    }
+    
     const char* mode = g_logInitialized ? "a" : "w";
     g_logInitialized = true;
 
@@ -43,7 +53,18 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID lpReserved) {
     if (reason == DLL_PROCESS_ATTACH) {
         DisableThreadLibraryCalls(hModule);
 
+        // Initialize config system FIRST (before any logging)
+        g_Config = new NuUniConfigManager();
+        g_Config->LoadConfig();
+        
         WriteLog("=== UNI2 Bypass DLL Loaded ===");
+        
+        // Log config settings
+        char configBuf[256];
+        sprintf(configBuf, "Config: Logging=%s, Portrait Limit=%d", 
+                g_Config->IsLoggingEnabled() ? "ON" : "OFF",
+                g_Config->GetPortraitLimit());
+        WriteLog(configBuf);
 
         // Check which process loaded us
         char exeName[MAX_PATH];
@@ -151,7 +172,18 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID lpReserved) {
 
         sprintf(buf, "Total: %d/3 patches applied", patchCount);
         WriteLog(buf);
+        
+        // Apply Geo's memory expansion patches
+        ApplyAllGeoPatches(hGameModule);
+        
         WriteLog("=== DllMain Complete ===");
+    }
+    else if (reason == DLL_PROCESS_DETACH) {
+        // Cleanup
+        if (g_Config) {
+            delete g_Config;
+            g_Config = nullptr;
+        }
     }
     return TRUE;
 }
