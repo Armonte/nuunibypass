@@ -5,8 +5,9 @@
 *.a
 *.so
 steam_appid.txt
+nuuni.ini
 
-# Build directories
+# Build directories2
 build/
 cmake-build-*/
 

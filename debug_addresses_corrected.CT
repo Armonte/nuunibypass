@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="42">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"=== 14 D FOLDER FLAGS (CORRECTED OFFSETS - Should ALL be 01) ==="</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1</ID>
+          <Description>"Flag 1: File offset 0xDA45 -> Runtime 0xDA45"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA45</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>2</ID>
+          <Description>"Flag 2: File offset 0xDA4F -> Runtime 0xDA4F"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA4F</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3</ID>
+          <Description>"Flag 3: File offset 0xDA59 -> Runtime 0xDA59"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA59</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>4</ID>
+          <Description>"Flag 4: File offset 0xDA63 -> Runtime 0xDA63"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA63</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>5</ID>
+          <Description>"Flag 5: File offset 0xDA6D -> Runtime 0xDA6D"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA6D</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>6</ID>
+          <Description>"Flag 6: File offset 0xDA81 -> Runtime 0xDA81"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA81</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>7</ID>
+          <Description>"Flag 7: File offset 0xDA8B -> Runtime 0xDA8B"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA8B</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8</ID>
+          <Description>"Flag 8: File offset 0x4DCA25 -> Runtime 0x4DCA25"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA25</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>9</ID>
+          <Description>"Flag 9: File offset 0x4DCA2F -> Runtime 0x4DCA2F"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA2F</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10</ID>
+          <Description>"Flag 10: File offset 0x4DCA39 -> Runtime 0x4DCA39"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA39</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>11</ID>
+          <Description>"Flag 11: File offset 0x4DCA43 -> Runtime 0x4DCA43"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA43</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>12</ID>
+          <Description>"Flag 12: File offset 0x4DCA4D -> Runtime 0x4DCA4D"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA4D</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>13</ID>
+          <Description>"Flag 13: File offset 0x4DCA61 -> Runtime 0x4DCA61"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA61</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14</ID>
+          <Description>"Flag 14: File offset 0x4DCA6B -> Runtime 0x4DCA6B"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA6B</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>100</ID>
+      <Description>"=== CSS PORTRAIT COUNT (Should be 64 hex = 100 decimal) ==="</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>101</ID>
+          <Description>"Portrait Limit: File offset 0x24E9F2 -> Runtime 0x24E9F2"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x24E9F2</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>200</ID>
+      <Description>"=== RUNTIME FLAGS (Debug Info) ==="</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>201</ID>
+          <Description>"g_bUseDFolderSystem at 0x99868C (Should be 01)"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x99868C</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>300</ID>
+      <Description>"=== D FOLDER PATH ARRAY (Where portrait paths are stored) ==="</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>301</ID>
+          <Description>"Path[0] - 260 byte string at 0x3F46EC0"</Description>
+          <VariableType>String</VariableType>
+          <Length>260</Length>
+          <Address>uni2.exe+0x3F46EC0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>302</ID>
+          <Description>"Path[1] - 260 byte string at 0x3F46FC4"</Description>
+          <VariableType>String</VariableType>
+          <Length>260</Length>
+          <Address>uni2.exe+0x3F46FC4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>303</ID>
+          <Description>"Path[2] - 260 byte string at 0x3F470C8"</Description>
+          <VariableType>String</VariableType>
+          <Length>260</Length>
+          <Address>uni2.exe+0x3F470C8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>304</ID>
+          <Description>"Path[3] - 260 byte string at 0x3F471CC"</Description>
+          <VariableType>String</VariableType>
+          <Length>260</Length>
+          <Address>uni2.exe+0x3F471CC</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>400</ID>
+      <Description>"=== COMPARISON: Booty vs Our Patches ==="</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>401</ID>
+          <Description>"INSTRUCTIONS:"</Description>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>402</ID>
+          <Description>"1. Load this table in uni2_booty.exe - take screenshots"</Description>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>403</ID>
+          <Description>"2. Load this table in uni2.exe with DLL - take screenshots"</Description>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>404</ID>
+          <Description>"3. Compare the D Folder Path Array entries!"</Description>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>405</ID>
+          <Description>"4. If booty has strings but we don't, that's the problem!"</Description>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
+

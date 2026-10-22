@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="42">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"========================================="</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"BOOTY'S EXE (uni2_booty.exe) - WORKING"</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"========================================="</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"[BOOTY] 14 D Folder Flags (Should be 01)"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>11</ID>
+          <Description>"Flag 1: 0xDA45"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0xDA45</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>12</ID>
+          <Description>"Flag 2: 0xDA4F"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0xDA4F</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>13</ID>
+          <Description>"Flag 3: 0xDA59"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0xDA59</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14</ID>
+          <Description>"Flag 4: 0xDA63"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0xDA63</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>15</ID>
+          <Description>"Flag 5: 0xDA6D"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0xDA6D</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>16</ID>
+          <Description>"Flag 6: 0xDA81"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0xDA81</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>17</ID>
+          <Description>"Flag 7: 0xDA8B"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0xDA8B</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>18</ID>
+          <Description>"Flag 8: 0x4DCA25"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0x4DCA25</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>19</ID>
+          <Description>"Flag 9: 0x4DCA2F"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0x4DCA2F</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>20</ID>
+          <Description>"Flag 10: 0x4DCA39"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0x4DCA39</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>21</ID>
+          <Description>"Flag 11: 0x4DCA43"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0x4DCA43</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>22</ID>
+          <Description>"Flag 12: 0x4DCA4D"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0x4DCA4D</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>23</ID>
+          <Description>"Flag 13: 0x4DCA61"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0x4DCA61</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>24</ID>
+          <Description>"Flag 14: 0x4DCA6B"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0x4DCA6B</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>30</ID>
+      <Description>"[BOOTY] CSS Portrait Count"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>31</ID>
+          <Description>"Portrait Limit: 0x24E9F2 (should be 64)"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0x24E9F2</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>40</ID>
+      <Description>"[BOOTY] Runtime Flag"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>41</ID>
+          <Description>"g_bUseDFolderSystem: 0x99868C (should be 01)"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2_booty.exe+0x99868C</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>50</ID>
+      <Description>"[BOOTY] D Folder Path Array (CRITICAL!)"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>51</ID>
+          <Description>"Path[0] at 0x3F46EC0"</Description>
+          <VariableType>String</VariableType>
+          <Length>260</Length>
+          <Address>uni2_booty.exe+0x3F46EC0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>52</ID>
+          <Description>"Path[1] at 0x3F46FC4"</Description>
+          <VariableType>String</VariableType>
+          <Length>260</Length>
+          <Address>uni2_booty.exe+0x3F46FC4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>53</ID>
+          <Description>"Path[2] at 0x3F470C8"</Description>
+          <VariableType>String</VariableType>
+          <Length>260</Length>
+          <Address>uni2_booty.exe+0x3F470C8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>54</ID>
+          <Description>"Path[3] at 0x3F471CC"</Description>
+          <VariableType>String</VariableType>
+          <Length>260</Length>
+          <Address>uni2_booty.exe+0x3F471CC</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>100</ID>
+      <Description>"========================================="</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>101</ID>
+      <Description>"OUR PATCHED EXE (uni2.exe + DLL)"</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>102</ID>
+      <Description>"========================================="</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>110</ID>
+      <Description>"[OURS] 14 D Folder Flags (Should be 01)"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>111</ID>
+          <Description>"Flag 1: 0xDA45"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA45</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>112</ID>
+          <Description>"Flag 2: 0xDA4F"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA4F</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>113</ID>
+          <Description>"Flag 3: 0xDA59"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA59</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>114</ID>
+          <Description>"Flag 4: 0xDA63"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA63</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>115</ID>
+          <Description>"Flag 5: 0xDA6D"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA6D</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>116</ID>
+          <Description>"Flag 6: 0xDA81"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA81</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>117</ID>
+          <Description>"Flag 7: 0xDA8B"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0xDA8B</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>118</ID>
+          <Description>"Flag 8: 0x4DCA25"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA25</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>119</ID>
+          <Description>"Flag 9: 0x4DCA2F"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA2F</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>120</ID>
+          <Description>"Flag 10: 0x4DCA39"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA39</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>121</ID>
+          <Description>"Flag 11: 0x4DCA43"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA43</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>122</ID>
+          <Description>"Flag 12: 0x4DCA4D"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA4D</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>123</ID>
+          <Description>"Flag 13: 0x4DCA61"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA61</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>124</ID>
+          <Description>"Flag 14: 0x4DCA6B"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x4DCA6B</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>130</ID>
+      <Description>"[OURS] CSS Portrait Count"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>131</ID>
+          <Description>"Portrait Limit: 0x24E9F2 (should be 64)"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x24E9F2</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>140</ID>
+      <Description>"[OURS] Runtime Flag"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>141</ID>
+          <Description>"g_bUseDFolderSystem: 0x99868C (should be 01)"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>uni2.exe+0x99868C</Address>
+          <ShowAsHex>1</ShowAsHex>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>150</ID>
+      <Description>"[OURS] D Folder Path Array (CRITICAL!)"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>151</ID>
+          <Description>"Path[0] at 0x3F46EC0"</Description>
+          <VariableType>String</VariableType>
+          <Length>260</Length>
+          <Address>uni2.exe+0x3F46EC0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>152</ID>
+          <Description>"Path[1] at 0x3F46FC4"</Description>
+          <VariableType>String</VariableType>
+          <Length>260</Length>
+          <Address>uni2.exe+0x3F46FC4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>153</ID>
+          <Description>"Path[2] at 0x3F470C8"</Description>
+          <VariableType>String</VariableType>
+          <Length>260</Length>
+          <Address>uni2.exe+0x3F470C8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>154</ID>
+          <Description>"Path[3] at 0x3F471CC"</Description>
+          <VariableType>String</VariableType>
+          <Length>260</Length>
+          <Address>uni2.exe+0x3F471CC</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>200</ID>
+      <Description>"========================================="</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>201</ID>
+      <Description>"INSTRUCTIONS:"</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>202</ID>
+      <Description>"1. Launch uni2_booty.exe, attach CE, expand BOOTY groups"</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>203</ID>
+      <Description>"2. Take screenshot of all values (especially Path Array!)"</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>204</ID>
+      <Description>"3. Launch uni2.exe with DLL, attach CE, expand OURS groups"</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>205</ID>
+      <Description>"4. Take screenshot and COMPARE - find the difference!"</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>206</ID>
+      <Description>"========================================="</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
+

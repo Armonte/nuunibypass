@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="47">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"CSelRandomizer"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+alloc(newmem, 2048)
+alloc(script_status, 4)
+label(loop_start)
+label(play_song_0)
+label(play_song_1)
+label(play_song_2)
+label(play_song_3)
+label(play_song_4)
+label(play_song_5)
+label(play_song_6)
+label(play_song_7)
+label(play_song_8)
+label(play_song_9)
+label(apply_text_copy)
+label(wait_for_reset)
+label(backup_fallback)
+label(exit_thread)
+
+script_status:
+  dd 1
+
+newmem:
+  push eax
+  mov eax, [uni2.exe+824430]
+  mov [uni2.exe+825A00], eax
+  mov eax, [uni2.exe+824434]
+  mov [uni2.exe+825A04], eax
+  mov eax, [uni2.exe+824438]
+  mov [uni2.exe+825A08], eax
+  mov eax, [uni2.exe+82443C]
+  mov [uni2.exe+825A0C], eax
+  mov eax, [uni2.exe+824440]
+  mov [uni2.exe+825A10], eax
+  mov eax, [uni2.exe+824444]
+  mov [uni2.exe+825A14], eax
+  mov eax, [uni2.exe+824448]
+  mov [uni2.exe+825A18], eax
+  mov eax, [uni2.exe+82444C]
+  mov [uni2.exe+825A1C], eax
+  mov eax, [uni2.exe+824450]
+  mov [uni2.exe+825A20], eax
+  mov eax, [uni2.exe+824454]
+  mov [uni2.exe+825A24], eax
+  pop eax
+  createthread(loop_start)
+  ret
+
+loop_start:
+  cmp dword ptr [script_status], 0
+  je exit_thread
+  push eax
+  mov eax, [uni2.exe+825A10]
+  cmp [uni2.exe+824440], eax
+  pop eax
+  jne wait_for_reset
+  push edx
+  push ecx
+  rdrand edx
+  jnc backup_fallback
+  xor ecx, ecx
+  mov ecx, 0A
+  push eax
+  mov eax, edx
+  xor edx, edx
+  div ecx
+  pop eax
+  cmp edx, #0
+  je play_song_0
+  cmp edx, #1
+  je play_song_1
+  cmp edx, #2
+  je play_song_2
+  cmp edx, #3
+  je play_song_3
+  cmp edx, #4
+  je play_song_4
+  cmp edx, #5
+  je play_song_5
+  cmp edx, #6
+  je play_song_6
+  cmp edx, #7
+  je play_song_7
+  cmp edx, #8
+  je play_song_8
+  jmp play_song_9
+
+play_song_0:
+  pop ecx
+  pop edx
+  push esi
+  lea esi, [uni2.exe+825870]
+  jmp apply_text_copy
+
+play_song_1:
+  pop ecx
+  pop edx
+  push esi
+  lea esi, [uni2.exe+8258B0]
+  jmp apply_text_copy
+
+play_song_2:
+  pop ecx
+  pop edx
+  push esi
+  lea esi, [uni2.exe+8258F0]
+  jmp apply_text_copy
+
+play_song_3:
+  pop ecx
+  pop edx
+  push esi
+  lea esi, [uni2.exe+825930]
+  jmp apply_text_copy
+
+play_song_4:
+  pop ecx
+  pop edx
+  push esi
+  lea esi, [uni2.exe+825970]
+  jmp apply_text_copy
+
+play_song_5:
+  pop ecx
+  pop edx
+  push esi
+  lea esi, [uni2.exe+8259B0]
+  jmp apply_text_copy
+
+play_song_6:
+  pop ecx
+  pop edx
+  push esi
+  lea esi, [uni2.exe+8259F0]
+  jmp apply_text_copy
+
+play_song_7:
+  pop ecx
+  pop edx
+  push esi
+  lea esi, [uni2.exe+825A30]
+  jmp apply_text_copy
+
+play_song_8:
+  pop ecx
+  pop edx
+  push esi
+  lea esi, [uni2.exe+825A70]
+  jmp apply_text_copy
+
+play_song_9:
+  pop ecx
+  pop edx
+  push esi
+  lea esi, [uni2.exe+825AB0]
+
+apply_text_copy:
+  push eax
+  mov eax, [esi]
+  mov [uni2.exe+824430], eax
+  mov eax, [esi+4]
+  mov [uni2.exe+824434], eax
+  mov eax, [esi+8]
+  mov [uni2.exe+824438], eax
+  mov eax, [esi+C]
+  mov [uni2.exe+82443C], eax
+  mov eax, [esi+10]
+  mov [uni2.exe+824440], eax
+  mov eax, [esi+14]
+  mov [uni2.exe+824444], eax
+  mov eax, [esi+18]
+  mov [uni2.exe+824448], eax
+  mov eax, [esi+1C]
+  mov [uni2.exe+82444C], eax
+  mov eax, [esi+20]
+  mov [uni2.exe+824450], eax
+  mov eax, [esi+24]
+  mov [uni2.exe+824454], eax
+  pop eax
+  pop esi
+  push #3000
+  call Sleep
+  jmp loop_start
+
+wait_for_reset:
+  push #2000
+  call Sleep
+  push eax
+  mov eax, [uni2.exe+825A00]
+  mov [uni2.exe+824430], eax
+  mov eax, [uni2.exe+825A04]
+  mov [uni2.exe+824434], eax
+  mov eax, [uni2.exe+825A08]
+  mov [uni2.exe+824438], eax
+  mov eax, [uni2.exe+825A0C]
+  mov [uni2.exe+82443C], eax
+  mov eax, [uni2.exe+825A10]
+  mov [uni2.exe+824440], eax
+  mov eax, [uni2.exe+825A14]
+  mov [uni2.exe+824444], eax
+  mov eax, [uni2.exe+825A18]
+  mov [uni2.exe+824448], eax
+  mov eax, [uni2.exe+825A1C]
+  mov [uni2.exe+82444C], eax
+  mov eax, [uni2.exe+825A20]
+  mov [uni2.exe+824450], eax
+  mov eax, [uni2.exe+825A24]
+  mov [uni2.exe+824454], eax
+  pop eax
+  jmp loop_start
+
+backup_fallback:
+  pop ecx
+  pop edx
+  push #100
+  call Sleep
+  jmp loop_start
+
+exit_thread:
+  ret
+
+[DISABLE]
+script_status:
+  dd 0
+push eax
+mov eax, [uni2.exe+825A00]
+mov [uni2.exe+824430], eax
+mov eax, [uni2.exe+825A04]
+mov [uni2.exe+824434], eax
+mov eax, [uni2.exe+825A08]
+mov [uni2.exe+824438], eax
+mov eax, [uni2.exe+825A0C]
+mov [uni2.exe+82443C], eax
+mov eax, [uni2.exe+825A10]
+mov [uni2.exe+824440], eax
+mov eax, [uni2.exe+825A14]
+mov [uni2.exe+824444], eax
+mov eax, [uni2.exe+825A18]
+mov [uni2.exe+824448], eax
+mov eax, [uni2.exe+825A1C]
+mov [uni2.exe+82444C], eax
+mov eax, [uni2.exe+825A20]
+mov [uni2.exe+824450], eax
+mov eax, [uni2.exe+825A24]
+mov [uni2.exe+824454], eax
+pop eax
+dealloc(newmem)
+dealloc(script_status)
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <Comments>Info about this table:
+</Comments>
+</CheatTable>

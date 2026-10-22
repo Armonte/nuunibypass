@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="47">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"No description"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>String</VariableType>
+      <Length>20</Length>
+      <Unicode>0</Unicode>
+      <CodePage>0</CodePage>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>uni2.exe+5454DC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"WallBound Hijacker"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+// 1. Allocate memory just for your new string
+alloc(myCustomString, 128)
+
+// 2. Write your string into that allocated memory
+myCustomString:
+// The ',0' at the end is required so the game knows where the text stops.
+db 'Mv_BoundWall',0
+
+// 3. Directly overwrite the original instruction to push your new string's address
+"uni2.exe"+13E36C:
+push myCustomString
+
+
+[DISABLE]
+// 1. Restore the original instruction and original string address
+"uni2.exe"+13E36C:
+push "uni2.exe"+5454DC
+
+// 2. Free the memory we allocated
+dealloc(myCustomString)
+
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
